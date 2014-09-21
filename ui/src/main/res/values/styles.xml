@@ -1,0 +1,36 @@
+<resources>
+	<style name="AppTheme" parent="android:Theme.Holo.Light.DarkActionBar">
+		<item name="android:actionBarStyle">@style/ActionBarStyle</item>
+		<item name="android:actionModeBackground">@color/action_bar_background</item>
+		<item name="android:textColor">#58585B</item>
+		<item name="android:editTextColor">#58585B</item>
+	</style>
+
+	<style name="ActionBarStyle" parent="@android:style/Widget.ActionBar">
+		<item name="android:background">@color/action_bar_background</item>
+		<item name="android:titleTextStyle">@style/ActionBarTitleTextStyle</item>
+		<item name="android:displayOptions">showTitle</item>
+	</style>
+
+	<style name="ActionBarTitleTextStyle" parent="@android:style/TextAppearance.Holo.Widget.ActionBar.Title">
+		<item name="android:textColor">@android:color/white</item>
+	</style>
+
+	<style name="AddTaskActivityAnimation" parent="AppTheme">
+		<item name="android:windowAnimationStyle">@style/AddTaskActivityAnimationStyle</item>
+	</style>
+
+	<style name="MainActivityAnimation" parent="AppTheme">
+		<item name="android:windowAnimationStyle">@style/MainActivityAnimationStyle</item>
+	</style>
+
+	<style name="AddTaskActivityAnimationStyle" parent="AppTheme">
+		<item name="android:activityOpenEnterAnimation">@anim/slide_up</item>
+		<item name="android:activityOpenExitAnimation">@anim/dummy</item>
+	</style>
+
+	<style name="MainActivityAnimationStyle" parent="AppTheme">
+		<item name="android:activityCloseEnterAnimation">@anim/dummy</item>
+		<item name="android:activityCloseExitAnimation">@anim/slide_down</item>
+	</style>
+</resources>

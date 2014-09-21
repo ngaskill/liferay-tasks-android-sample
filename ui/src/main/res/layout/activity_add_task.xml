@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	android:padding="16dp"
+	tools:context=".activity.AddTaskActivity">
+
+	<TextView
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="Title"
+		android:textStyle="bold" />
+
+	<EditText
+		android:id="@+id/task"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="8dp"
+		android:background="@null"
+		android:gravity="start|top"
+		android:hint="@string/add_your_task_here"
+		android:singleLine="true"
+		android:textSize="14sp" />
+
+	<LinearLayout
+		android:id="@+id/status_bar_container"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+		android:visibility="gone">
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="32dp"
+			android:text="@string/status"
+			android:textStyle="bold" />
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical">
+
+			<SeekBar
+				android:id="@+id/status_bar"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="8dp" />
+
+			<TextView
+				android:id="@+id/percentage"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:gravity="center_horizontal"
+				android:text="@string/status"
+				android:textStyle="bold"
+				tools:text="20%" />
+		</LinearLayout>
+	</LinearLayout>
+
+	<FrameLayout
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_weight="1"
+		android:paddingTop="24dp">
+
+		<Button
+			android:id="@+id/save"
+			android:layout_width="wrap_content"
+			android:layout_height="40dp"
+			android:layout_gravity="right"
+			android:background="@drawable/save_button"
+			android:paddingLeft="32dp"
+			android:paddingRight="32dp"
+			android:text="@string/save"
+			android:textColor="@android:color/white"
+			android:textSize="13sp" />
+	</FrameLayout>
+</LinearLayout>
